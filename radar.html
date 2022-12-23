@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<style media="screen">
+	*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+	}
+
+	body{
+
+
+	 font-family: sans-serif;
+
+
+	}
+
+	.mb{
+			background:rgb(0,100,0);
+			text-align: center;
+	}
+
+	.mb ul {
+			display: inline-flex;
+			color: #fff;
+
+	}
+
+	.mb ul li{
+			width: 120px;
+			margin: 15px;
+			padding: 15px;
+
+	}
+
+	.mb ul li a{
+			text-decoration: none;
+			color: #fff;
+	}
+
+	.act, .mb ul li:hover{
+			background: #2bab0d;
+			border-radius: 3px;
+
+	}
+	 .m1{
+			display: none;
+	 }
+
+	 .mb ul li:hover .m1{
+
+			display: block;
+			position: absolute;
+			background: rgb(0,100,0);
+			margin-top: 15px;
+			margin-left: -15px;
+	 }
+
+	 .mb ul li:hover .m1 ul{
+			display: block;
+			margin: 10px;
+	 }
+
+	 img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+	 }
+
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="owl-carousel" id="slider-area">
+			<div style="background-image: url(img/16.jpg)"></div>
+			<div style="background-image: url(img/17.jpg)"></div>
+			<div style="background-image: url(img/18.jpg)"></div>
+		</div>
+		<div class="nav-area">
+			<div class="nav">
+				<a href="index.html">Home</a>
+				<a href="projects.html">projects</a>
+				<a href="updates.html">updates</a>
+				<a href="index0.php">contact me</a>
+
+			</div>
+		</div>
+		<div class="slider-text">
+			<video width="1080" height="720" controls>
+			  <source src="IMG_0031.MOV" type="video/mp4">
+
+			  Your browser does not support the video tag.
+			</video>
+
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script>
+	$('#slider-area').owlCarousel({
+	   loop: true,
+	   autoplay: true,
+	   responsive: {
+	       0: {
+	           items: 1
+	       },
+	       600: {
+	           items: 1
+	       },
+	       1000: {
+	           items: 1
+	       }
+	   }
+	})
+	</script>
+</body>
+</html>
